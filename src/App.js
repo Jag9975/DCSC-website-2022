@@ -1,8 +1,10 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navigation from "./Navbar.js";
-import logo from './logo.svg';
 import './App.css';
+import Home from "./pages/home/Home.js"
+import Events from "./pages/events/Events.js"
+import AboutUs from "./pages/aboutUs/AboutUs.js"
 
 function App() {
   return (
@@ -11,14 +13,15 @@ function App() {
         <div className="content-container">
         <Navigation />
 
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/nameHere" component={} />
-          <Route component={Error} />
-        </Switch>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/aboutus" element={<AboutUs />} />
+          <Route element={<Home />} />
+        </Routes>
 
         </div>
-        <Footer />
+
       </div>
     </Router>
   );
