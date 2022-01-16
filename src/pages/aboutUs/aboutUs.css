@@ -1,0 +1,30 @@
+.aboutus-container {
+    color: white;
+}
+
+.intro-main-card {
+    width: 600px;
+    height: 270px;
+    margin: 30px;
+    background-color: #212529;
+    color: white;
+}
+  
+.card-item-img {
+    margin-top: 8px;
+    height: auto;
+    max-height: 180px;
+    width: auto;
+    max-width: 180px;
+    border-radius: 20px;
+}
+
+.text-div {
+    width: 400px;
+    height: 300px;
+    text-align: start;
+}
+
+.col-spacings {
+    padding: 0%;
+}
