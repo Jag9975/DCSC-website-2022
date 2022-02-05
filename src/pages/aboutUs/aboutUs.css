@@ -3,28 +3,35 @@
 }
 
 .intro-main-card {
-    width: 600px;
-    height: 270px;
-    margin: 30px;
+    max-width: 570px;
     background-color: #212529;
+    margin-top: 20px;
     color: white;
+}
+
+.col-spacings {
+    padding: 0%;
+    align-items: center;
 }
   
 .card-item-img {
     margin-top: 8px;
     height: auto;
-    max-height: 180px;
+    max-height: 170px;
     width: auto;
-    max-width: 180px;
+    max-width: 170px;
     border-radius: 20px;
 }
 
 .text-div {
-    width: 400px;
-    height: 300px;
+    max-width: 380px;
+    max-height: 300px;
     text-align: start;
 }
 
-.col-spacings {
-    padding: 0%;
-}
+@media only screen and (min-width: 600px) {
+    .intro-main-card {
+        margin: 23px;
+        margin-top: 0px;
+    }
+  }
